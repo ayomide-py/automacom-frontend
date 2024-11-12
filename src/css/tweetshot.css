@@ -1,0 +1,62 @@
+.tweetshot {
+  width: 370px;
+  margin-bottom: 100px;
+  padding: 20px 20px;
+  border-radius: 25px;
+  background-color: white;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.tweet-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tweet-profile img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.tweet-head {
+  display: flex;
+  align-items: center;
+}
+
+.tweet-profile-name {
+  line-height: 0.2;
+  margin-left: 15px;
+}
+
+.tweet-profile-name p span {
+  font-weight: 800;
+  color: black;
+}
+
+.tweet-profile-name p {
+  color: var(--blog-text);
+}
+
+.twitter-icon i {
+  font-size: 40px;
+  color: blue;
+}
+
+@media screen and (max-width: 650px) {
+  .tweetshot {
+    width: 370px;
+    margin-left: 0px;
+  }
+
+  .twitter-icon i {
+    font-size: 30px;
+  }
+
+  .tweet-profile img {
+    width: 50px;
+    height: 50px;
+  }
+}

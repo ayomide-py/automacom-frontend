@@ -1,0 +1,263 @@
+.blog {
+    padding-top: 100px;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: var(--light-blue);
+}
+
+.blog-cover {
+    display: grid;
+    grid-template-columns: calc(65% - 7.5px) calc(35% - 7.5px);
+    grid-gap: 15px;
+    height: 500px;
+}
+
+.blog h2 {
+    font-weight: 700;
+    line-height: 35px;
+    margin-bottom: -5px;
+}
+
+.blog h5 {
+    font-weight: 700;
+    line-height: 25px;
+    margin-bottom: -5px;
+}
+
+.blog img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.blog-relative {
+    position: relative;
+    z-index: 1;
+}
+
+.blog-relative::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: rgba(22, 22, 22, 0.70);
+}
+
+.blog-cover-frame-1 .cover-blog-detail {
+    bottom: -1%;
+    position: absolute;
+    padding: 20px 30px 20px 30px;
+    color: white;
+}
+
+.blog-cover-frame-2 .cover-blog-detail {
+    bottom: -5%;
+    position: absolute;
+    padding: 10px 15px 10px 15px;
+    color: white;
+}
+
+.blog-details {
+    display: flex;
+    align-items: center;
+}
+
+.blog-details p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.blog-details i {
+    font-size: 13px;
+}
+
+.blogger-name, .blog-date, .blog-comment {
+    display: flex;
+    align-items: center;
+}
+
+.blog-cover-frame-2 {
+    display: grid;
+    grid-gap: 15px;
+    flex-direction: column;
+}
+
+.frame-2-child {
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notice-banner {
+    background-color: white;
+    margin-top: 15px;
+    padding: 1px 15px 1px 15px;
+}
+
+.notice-banner h4 {
+    font-weight: 700;
+}
+
+.notice-banner h4 span {
+    color: var(--primary-color);
+}
+
+.other-blogs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.other-blogs p, .other-blogs i {
+    color: var(--blog-text);
+}
+
+.latest-blog {
+    width: calc(65% - 7.5px);
+    background-color: white;
+    margin-bottom: 15px;
+    height: max-content;
+}
+
+.trending-blog {
+    width: calc(35% - 7.5px);
+    background-color: white;
+    margin-bottom: 15px;
+    height: max-content;
+}
+
+.other-blog-title {
+    margin: 1px 15px 1px 15px;
+    background-color: var(--primary-color);
+}
+
+.other-blog-title h5 {
+    padding: 10px 15px;
+    color: white;
+}
+
+.latest-blog-posts {
+    padding: 15px;
+}
+
+.blog-post {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog-post-img {
+    width: calc(40% - 7.5px);
+    height: 200px;
+}
+
+.blog-margin {
+    margin-bottom: 15px;
+}
+
+.blog-post-detail {
+    width: calc(60% - 7.5px);
+}
+
+.blog-post-description {
+    margin-top: 0px;
+    margin-bottom:  0px;
+}
+
+.trending-blog-posts .blog-post {
+    flex-direction: column;
+    padding: 15px;
+}
+
+.trending-blog-posts .blog-post-img {
+    width: 100%
+}
+
+.trending-blog-posts .blog-post-detail {
+    width: 100%;
+}
+
+.latest-posts .blog-post {
+    flex-direction: row;
+}
+
+.latest-posts .blog-post .blog-post-img {
+    width: 40%;
+    height: 100px;
+    margin-right: 15px;
+}
+
+.divide-line {
+    height: 1px;
+    background-color: var(--secondary-color);
+    width: calc(100% - 35px);
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+@media screen and (max-width: 650px) {
+    .blog {
+        padding-top: 80px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .blog-cover {
+        grid-template-columns: 100%;
+        grid-gap: 15px;
+        height: 600px;
+    }
+
+    .blog h2, .blog h4, .blog h5 {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .blog-details p {
+        margin-left: 8px;
+        margin-right: 8px;
+        font-size: 12px;
+    }
+
+    .blog-details i {
+        font-size: 12px;
+    }
+
+    .blog-cover-frame-1 .cover-blog-detail {
+        bottom: -5%;
+        padding: 10px 15px 10px 15px;
+    }
+
+    .blog-cover-frame-1 {
+        height: 200px;
+    }
+
+    .blog-cover-frame-2 {
+        height: 400px;
+    }
+
+    .other-blogs {
+        flex-direction: column;
+    }
+
+    .latest-blog, .trending-blog {
+        width: 100%;
+    }
+
+    .blog-post {
+        flex-direction: column;
+    }
+
+    .blog-post-img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .blog-post-detail {
+        width: 100%;
+    }
+}

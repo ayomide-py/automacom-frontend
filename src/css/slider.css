@@ -1,0 +1,34 @@
+.slider {
+    font-family: sans-serif;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: max-content;
+}
+
+.slider .tweets-container {
+    display: flex;
+    width: 1200px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    transition: scroll 0.3s ease-in-out;
+}
+
+.slider .tweets {
+    width: 370px;
+    height: max-content;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 650px) {
+    .slider .tweets-container {
+        width: 100%;
+    }
+
+    .slider .tweets {
+        width: 370px;
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+}

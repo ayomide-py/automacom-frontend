@@ -1,0 +1,146 @@
+.register {
+    font-weight: 500;
+    color: white;
+}
+
+.register-form {
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    width: 70%;
+    padding: 10% 15%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.register-form-style {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 35%;
+    margin-right: 35%;
+    width: 30%;
+    padding: 40px;
+}
+
+.register-style {
+    position: relative;
+    padding: 96px 0 90px;
+    font-weight: 500;
+    color: white;
+    background: url("../images/slide-show-img/ss-4.jpg") no-repeat center;
+    background-size: cover;
+    z-index: 1;
+    height: max-content;
+}
+
+.register-style::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: rgba(22, 22, 22, 0.92);
+}
+
+.register-form .input-form {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+.register-form .input-form input, .register-form .input-form select {
+    height: 50px;
+    margin-bottom: 15px;
+    padding: 10px 30px;
+    border: none;
+    border-bottom: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    width: 100%;
+    background-color: white;
+}
+
+.join-r-btn button{
+    width: 100%;
+}
+
+.input-container {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    left: 10px;
+    top: 25px;
+    transform: translateY(-50%);
+    color: var(--primary-color);
+}
+
+.r-icon {
+    position: absolute;
+    right: 10px;
+    top: 25px;
+    transform: translateY(-50%);
+    color: var(--primary-color);
+}
+
+.close-icon {
+    position: absolute;
+    right: 30%;
+    top: 5%;
+    transform: translateY(-50%);
+    color: var(--primary-color);
+    font-size: 25px;
+}
+
+.message-banner {
+    background-color: var(--light-blue);
+    border-left: 3px solid var(--secondary-color);
+}
+
+.message-banner p {
+    color: var(--primary-color);
+    font-weight: 700;
+    padding: 10px;
+}
+
+@media screen and (max-width: 650px) {
+    .register-form {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 25px 15px 35px 15px;
+        width: 90%;
+        margin-bottom: 25px;
+    }
+
+    .register-form .input-form {
+        font-size: 13px;
+    }
+
+    .register {
+        padding-top: 100px;
+    }
+
+    .close-icon {
+        right: 8%;
+        top: 20%;
+        transform: translateY(-50%);
+        color: var(--primary-color);
+        font-size: 20px;
+    }
+
+    .heading h2 {
+        font-size: 20px;
+    }
+
+    .join-r-btn button {
+        padding: 10px;
+    }
+
+    .register-form-style {
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+}

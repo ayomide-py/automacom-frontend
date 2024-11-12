@@ -1,0 +1,563 @@
+.mission-vission {
+  padding-left: 15%;
+  padding-right: 15%;
+  text-align: center;
+  padding-top: 1px;
+  padding-bottom: 30px;
+  background-color: #f9f9f9;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  padding-top: 20px;
+}
+
+.heading h2 {
+  font-weight: bolder;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.heading .line {
+  width: 100px;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+.who-are-we-text {
+  width: 47%;
+}
+
+.who-are-we-image {
+  width: 47%;
+}
+
+.who-are-we {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.who-are-we-image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.mission-vission-values {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+  opacity: 0;
+  gap: 40px;
+}
+
+.wpb_wrapper {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 25px 0px 25px 0px;
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+.wpb_wrapper .key-icon-box {
+  box-sizing: border-box;
+  animation-duration: 0.6s;
+  animation-fill-mode: both;
+  text-align: center;
+}
+
+.wpb_wrapper .tt-iconbox-customimg {
+  box-sizing: border-box;
+  border-radius: 90px;
+  margin: auto auto 35px;
+  font-size: 35px;
+  width: 100px;
+  height: 100px;
+  line-height: 105px;
+  position: relative;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 6px 20px;
+}
+
+.wpb_wrapper .tt-iconbox-customimg img {
+  box-sizing: border-box;
+  border: 0px;
+  vertical-align: middle;
+  position: absolute;
+  left: 50%;
+  margin-left: -22px;
+  max-width: 45px;
+  top: 50%;
+  margin-top: -21px;
+  height: auto;
+}
+
+.wpb_wrapper h4 {
+  box-sizing: border-box;
+  text-transform: none;
+  font-size: 18px;
+  margin-top: 0px;
+  line-height: 22px;
+  margin-bottom: 10px;
+  color: rgb(51, 51, 51);
+  font-weight: 700;
+}
+
+.wpb_wrapper p {
+  box-sizing: border-box;
+  margin: 0px 0px 10px;
+  margin-bottom: 0px;
+  line-height: 25px;
+  font-weight: 350;
+}
+
+.mission-vission-values.animated {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.wpb_wrapper.animated {
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 1s ease-in-out;
+}
+
+.wpb_wrapper.animated h4,
+.wpb_wrapper.animated p {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 1s ease-in-out,
+    transform 0.5s ease-in-out;
+}
+
+.pioneer-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wpb_column {
+  position: relative;
+  min-height: 1px;
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.wpb_column .vc_column-inner {
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+
+.wpb_column .wpb_wrapper-profile .team-member {
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+  animation-duration: 0.6s;
+  animation-fill-mode: both;
+}
+
+.wpb_column .wpb_wrapper-profile .team-content {
+  box-sizing: border-box;
+  padding: 0px;
+  position: relative;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.wpb_column .wpb_wrapper-profile .team-image {
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 60px auto 20px;
+  width: 300px;
+  height: 300px;
+}
+
+.wpb_column .wpb_wrapper-profile .team-image img {
+  box-sizing: border-box;
+  border: 0px;
+  vertical-align: middle;
+  margin: 0px auto;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 6px 20px;
+}
+
+.wpb_column .wpb_wrapper-profile .team-image .team-content-hover {
+  box-sizing: border-box;
+  padding: 40px 35px;
+  overflow: hidden;
+  border-radius: 50%;
+  top: 0px;
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  opacity: 0;
+  visibility: hidden;
+  background-color: var(--primary-color);
+  left: var(--average-width);
+  transition: 0.5s ease-in-out;
+}
+
+.wpb_column .wpb_wrapper-profile .team-image:hover .team-content-hover {
+  visibility: visible;
+  opacity: 1;
+  border-radius: 20px;
+  transform: translateY(0);
+  transition: 0.5s ease-in-out;
+}
+
+.team-content-hover .gradient-overlay {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+.team-content-hover h5 {
+  box-sizing: border-box;
+  font-family: inherit;
+  margin: 0px 0px 10px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 2rem;
+  position: relative;
+}
+
+.team-content-hover .team-subtitle {
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  display: block;
+  font-size: 14px;
+  font-style: italic;
+  color: rgb(255, 255, 255);
+  position: relative;
+  font-size: 2rem;
+}
+
+.team-content-hover p {
+  box-sizing: border-box;
+  margin: 0px 0px 10px;
+  margin-bottom: 0px;
+  transition: all 0.25s ease-in 0s;
+  color: rgb(255, 255, 255);
+  line-height: 2rem;
+  position: relative;
+}
+
+.team-content h5 {
+  box-sizing: border-box;
+  margin: 0px 0px 10px;
+  font-size: 18px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: rgb(51, 51, 51);
+}
+
+.team-content .team-subtitle {
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  display: block;
+  font-size: 14px;
+  font-style: italic;
+  color: inherit;
+}
+
+.attachment-full {
+  color: var(--primary-color);
+}
+
+.activities::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: rgba(22, 22, 22, 0.8);
+}
+
+.activities-title h2 {
+  color: var(--secondary-color);
+}
+
+.activities-description p {
+  line-height: 2rem;
+  font-weight: 400;
+}
+
+.activities-contain {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding-left: 15%;
+  padding-right: 15%;
+  overflow: hidden;
+}
+
+.activities-container {
+  border: 2px solid var(--secondary-color);
+  border-radius: 20px;
+  padding: 20px 40px 20px 40px;
+  margin: 30px 10px 30px 10px;
+  transition: transform 0.5s;
+  width: 100%;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.activities-container.current {
+  transform: translateX(0%);
+  opacity: 1;
+  animation: none;
+}
+
+.activities-container.next {
+  transform: translateX(100%);
+  opacity: 1;
+  animation: none;
+}
+
+.activities-container.previous {
+  transform: translateX(-100%);
+  opacity: 1;
+  animation: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.training-grid {
+  padding-left: 15%;
+  padding-right: 15%;
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-gap: 20px;
+  justify-content: center;
+  opacity: 0;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.training-grid .single-cat {
+  box-sizing: border-box;
+  margin-bottom: 50px;
+  background: rgb(255, 255, 255);
+  padding: 40px 21px;
+  transition: all 0.4s ease-out 0s;
+  border-radius: 5px;
+  position: relative;
+  text-align: center;
+  color: rgb(35, 47, 85);
+  opacity: 0;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  transform: translateY(100px);
+}
+
+.training-grid .single-cat:hover {
+  transition: 0.5s ease-in-out;
+  background: var(--primary-color);
+  color: white;
+}
+
+.training-grid .single-cat .cat-icon {
+  box-sizing: border-box;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  color: var(--primary-color);
+  font-size: 50px;
+  margin-bottom: 20px;
+  width: 120px;
+  height: 120px;
+  line-height: 100px;
+  text-align: center;
+  display: inline-block;
+  box-shadow: rgba(0, 4, 74, 0.04) 0px 15px 25px;
+}
+
+.cat-icon img {
+  box-sizing: border-box;
+  border-style: none;
+  width: 60%;
+}
+
+.cat-cap h3 {
+  background-color: transparent;
+  outline: none medium;
+  transition: all 0.2s ease-out 0s;
+  margin-bottom: 21px;
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.cat-cap p {
+  box-sizing: border-box;
+  transition: all 0.2s ease-out 0s;
+  margin: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: 25px;
+  font-weight: 400;
+}
+
+.training-grid.animated {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.single-cat.animated {
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 1s ease-in-out;
+}
+
+.single-cat.animated h4,
+.single-cat.animated p {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 1s ease-in-out,
+    transform 1s ease-in-out;
+}
+
+.slide-out {
+  position: relative;
+  animation: animateright 0.5s;
+}
+
+.join-btn button {
+  background-color: var(--light-blue);
+  background: linear-gradient(100deg, white, var(--light-blue));
+  color: var(--primary-color);
+}
+
+.join-banner {
+  padding: 100px 0 100px 0;
+  text-align: center;
+  background: linear-gradient(270deg, #045a7b, #07aef5);
+}
+
+.banner-title h1 {
+  color: var(--primary-color);
+  line-height: 5rem;
+  color: white;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+@keyframes animateright {
+  0% {
+    right: 0px;
+  }
+  100% {
+    right: 300px;
+  }
+}
+
+.tweet-section {
+  background-color: var(--light-blue);
+}
+
+@media screen and (max-width: 650px) {
+  .mission-vission {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .wpb_column .wpb_wrapper-profile .team-image .team-content-hover {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    width: 95%;
+  }
+
+  .mission-vission-values {
+    flex-direction: column;
+  }
+
+  .activities-contain {
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .training-grid {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner-title h1 {
+    line-height: 3rem;
+    font-size: 35px;
+  }
+  .who-are-we-text {
+    width: 100%;
+  }
+
+  .who-are-we-image {
+    width: 100%;
+  }
+
+  .who-are-we {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 651px) and (max-width: 1024px) {
+  .mission-vission {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .mission-vission-values {
+    justify-content: space-around;
+  }
+
+  .wpb_wrapper {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .training-grid {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .training-grid .single-cat {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .activities-contain {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .banner-title h1 {
+    line-height: 1rem;
+  }
+}

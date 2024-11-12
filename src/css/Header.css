@@ -1,0 +1,341 @@
+.header {
+    padding-right: 15%;
+    padding-left: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0px 7px 12px -4px rgba(0, 0, 0, 0.45);
+}
+
+.header .logo img {
+    width: 200px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.nav ul li, .nav .contact-us {
+    padding: 5px 15px 5px 15px;
+    font-weight: 1200;
+}
+
+.link {
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transform-origin: center;
+    opacity: 0;
+}
+
+.chapters-dropdown {
+    display: none;
+    width: max-content;
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 7px 12px -4px rgba(0, 0, 0, 0.45);
+    transition: 0.5s ease;
+}
+
+.chapters-dropdown.visible {
+    display: block;
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+.chapters-dropdown:hover {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.chapters {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.chapters:hover {
+    background-color: rgb(249, 244, 244);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.chapters .chapter-image img {
+    width: 50px;
+}
+
+@keyframes expand {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+
+    50% {
+        width: 100%;
+        opacity: 1;
+    }
+
+    100% {
+        width: 100%;
+        /* Change this line to make it stay expanded */
+        opacity: 1;
+        /* Change this line to make it stay expanded */
+    }
+}
+
+.link:hover::before {
+    animation: expand 1s forwards;
+}
+
+.mobile {
+    display: none;
+}
+
+.chapter-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-top: -15px;
+    margin-bottom: -15px;
+}
+
+.mobile-chapter-dropdown {
+    display: none;
+    transition: ease-in-out 0.5s;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+.mobile-chapter-dropdown.chapter-show {
+    display: block;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+@media screen and (max-width: 650px) {
+    .mobile {
+        display: block;
+    }
+
+    .mobile a {
+        height: 0px;
+        padding: 0px;
+    }
+
+    .project-link {
+        margin: 0px;
+    }
+
+    .mobile .bars {
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .mobile .bars .bar {
+        width: 25px;
+        height: 3px;
+        margin: 4px;
+        background-color: var(--primary-color);
+    }
+
+    .mobile .bars .close {
+        font-size: 1.5rem;
+    }
+
+    .mobile .bars .close-bar {
+        display: none;
+    }
+
+    .mobile .bars .close {
+        display: none;
+    }
+
+    .mobile .bars .close-x {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .header .logo img {
+        width: 150px;
+    }
+
+    .header {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 0px;
+    }
+
+    .mobile ul {
+        position: absolute;
+        text-decoration: none;
+        list-style-type: none;
+        top: 75%;
+        right: 0;
+        font-size: 1rem;
+        width: 100%;
+        background-color: white;
+        border-radius: 5px;
+        padding: 0px 20px 0px 20px;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 6px 20px;
+    }
+    
+    .mobile ul li {
+        padding: 15px 10px 15px 10px;
+        border-bottom: 1px solid var(--primary-color);
+    }
+    
+    .mobile .mobile-nav-list {
+        display: none;
+        overflow: hidden;
+    }
+
+    .mobile-nav-list.nav-open {
+        display: block;
+    }
+
+    .chapters .chapter-image img {
+        width: 30px;
+        margin-right: 7px;
+    }
+
+    .chapters {
+        padding: 0px;
+    }
+
+    .chapters:hover {
+        padding: 5px;
+    }
+}
+
+
+@media screen and (min-width: 651px) and (max-width: 1145px) {
+    .header {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .mobile .bars .bar {
+        width: 25px;
+        height: 3px;
+        margin: 4px;
+        background-color: var(--primary-color);
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .mobile .bars {
+        cursor: pointer;
+    }
+
+    .mobile .bars .bar {
+        width: 25px;
+        height: 3px;
+        margin: 4px;
+        background-color: var(--primary-color);
+    }
+
+    .mobile .bars .close {
+        font-size: 1.5rem;
+    }
+
+    .mobile .bars .close-bar {
+        display: none;
+    }
+
+    .mobile .bars .close {
+        display: none;
+    }
+
+    .mobile .bars .close-x {
+        display: block;
+    }
+
+    .mobile ul {
+        position: absolute;
+        text-decoration: none;
+        list-style-type: none;
+        top: 30;
+        right: 0;
+        font-size: 1rem;
+        width: 250px;
+        background-color: white;
+        border: 1px solid var(--primary-color);
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 6px 20px;
+    }
+    
+    .mobile ul li {
+        padding: 15px 10px 15px 10px;
+        border-bottom: 1px solid var(--primary-color);
+    }
+    
+    .mobile .mobile-nav-list {
+        display: none;
+    }
+
+    .mobile-nav-list.nav-open {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1145px) and (max-width: 1300px) {
+    .header {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1445px) {
+    .header {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
