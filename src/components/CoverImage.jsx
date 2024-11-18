@@ -6,6 +6,7 @@ import ss_3 from "../images/slide-show-img/ss-3.jpg";
 import ss_4 from "../images/slide-show-img/ss-4.jpg";
 import ss_5 from "../images/slide-show-img/ss-5.jpg";
 import Btn from "./Btn";
+import { Link } from "react-router-dom";
 
 const CoverImage = () => {
   const images = [ss_1, ss_2, ss_3, ss_4, ss_5];
@@ -30,7 +31,7 @@ const CoverImage = () => {
 
   const goToPreviousSlide = () => {
     setCurrentImageIndex(
-      (prevIndex) => (prevIndex - 1 + images.length) % images.length
+      (prevIndex) => (prevIndex - 1 + images.length) % images.length,
     );
   };
 
@@ -49,14 +50,18 @@ const CoverImage = () => {
         <div className="slide-text-title">
           <h1>Welcome to Automation Community, University of Lagos Chapter</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Welcome to AUTOMACOM – the Automation Community at the University of
+            Lagos. We are a passionate group of students and future engineers
+            dedicated to turning theories into impactful projects in Robotics,
+            AI, IoT, and Embedded Systems.
           </p>
           <div className="line"></div>
         </div>
         <div className="join-us-btn">
           <p>The application form is now opened</p>
-          <Btn content={"Join the Community"} />
+          <Link to={"/auth/register"}>
+            <Btn content={"Join the Community"} url={"/auth/"} />
+          </Link>
         </div>
       </div>
     </div>

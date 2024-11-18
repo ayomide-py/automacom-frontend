@@ -2,6 +2,7 @@ import React from "react";
 import "../css/Footer.css";
 import "@fortawesome/fontawesome-free/css/all.css";
 import logo_img from "../images/automacom_logo.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -18,12 +19,12 @@ const Footer = () => {
                   <img src={logo_img} />
                 </a>
                 <p>
-                  Lorem ipsum dolor sit amet, con sectetur adipiscing elit.
-                  Mauris temp us vestib ulum mauris.Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit. Mauris tempus vestib ulum
-                  mauris.Lorem ipsum dolo.
+                  Welcome to AUTOMACOM – the Automation Community at the
+                  University of Lagos. We are a passionate group of students and
+                  future engineers dedicated to turning theories into impactful
+                  projects in Robotics, AI, IoT, and Embedded Systems.
                 </p>
-                <ul className="d-flex flex-wrap align-items-center">
+                {/* <ul className="d-flex flex-wrap align-items-center">
                   <li>
                     <a href="https://preview.colorlib.com/theme/thecharity/#">
                       <i className="fa fa-pinterest-p" />
@@ -54,46 +55,26 @@ const Footer = () => {
                       <i className="fa fa-linkedin" />
                     </a>
                   </li>
-                </ul>
+                </ul> */}
               </div>
             </div>
             <div className="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
               <h2>Useful Links</h2>
               <ul>
                 <li>
-                  <a href="https://preview.colorlib.com/theme/thecharity/#">
-                    Privacy Polticy
-                  </a>
+                  <Link to={"/project-gallery"}>Projects</Link>
                 </li>
                 <li>
-                  <a href="https://preview.colorlib.com/theme/thecharity/#">
-                    Become a Volunteer
-                  </a>
+                  <Link to={"/auth/register"}>Become a Member</Link>
                 </li>
                 <li>
-                  <a href="https://preview.colorlib.com/theme/thecharity/#">
-                    Donate
-                  </a>
+                  <Link to={"/photo-gallery"}>Photo Gallery</Link>
                 </li>
                 <li>
-                  <a href="https://preview.colorlib.com/theme/thecharity/#">
-                    Testimonials
-                  </a>
+                  <Link to={"/blogs"}>Blogs</Link>
                 </li>
                 <li>
-                  <a href="https://preview.colorlib.com/theme/thecharity/#">
-                    Causes
-                  </a>
-                </li>
-                <li>
-                  <a href="https://preview.colorlib.com/theme/thecharity/#">
-                    Portfolio
-                  </a>
-                </li>
-                <li>
-                  <a href="https://preview.colorlib.com/theme/thecharity/#">
-                    News
-                  </a>
+                  <Link to={"/about-us"}>About Us</Link>
                 </li>
               </ul>
             </div>
@@ -134,15 +115,18 @@ const Footer = () => {
                 <ul>
                   <li>
                     <i className="fa fa-phone" />
-                    <span>+45 677 8993000 223</span>
+                    <span>+234 123 4567 890</span>
                   </li>
                   <li>
                     <i className="fa fa-envelope" />
-                    <span>office@template.com</span>
+                    <span>info@automacom.org</span>
                   </li>
                   <li>
                     <i className="fa fa-map-marker" />
-                    <span>Main Str. no 45-46, b3, 56832, Los Angeles, CA</span>
+                    <span>
+                      Faculty of Engineering Building University of Lagos,
+                      Akoka, Yaba, Lagos, Nigeria (Room 301, Third Floor)
+                    </span>
                   </li>
                 </ul>
               </div>

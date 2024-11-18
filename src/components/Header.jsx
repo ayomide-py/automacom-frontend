@@ -71,7 +71,7 @@ const Header = () => {
                   </div>
                 </div>
               </Link>
-              <Link to="/chapter/futa">
+              {/* <Link to="/chapter/futa">
                 <div className="chapters">
                   <div className="chapter-image">
                     <img src={unilag_logo} alt="" srcSet="" />
@@ -90,7 +90,7 @@ const Header = () => {
                     <p>BOWEN Chapter, Automation Community</p>
                   </div>
                 </div>
-              </Link>
+              </Link> */}
             </div>
           </li>
           <li className="link">
@@ -151,7 +151,7 @@ const Header = () => {
                   </div>
                 </div>
               </Link>
-              <Link to="/chapter/futa">
+              {/* <Link to="/chapter/futa">
                 <div className="chapters">
                   <div className="chapter-image">
                     <img src={unilag_logo} alt="" srcSet="" />
@@ -170,7 +170,7 @@ const Header = () => {
                     <p>AUTOMACOM BOWEN CHAPTER</p>
                   </div>
                 </div>
-              </Link>
+              </Link> */}
             </div>
           </li>
           <Link to="/project-gallery">

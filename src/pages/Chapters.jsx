@@ -5,6 +5,7 @@ import { Btn, CoverImage, Loading } from "../components";
 import BaseUrl from "../components/BaseUrl";
 import { Link } from "react-router-dom";
 import exec from "../images/slide-show-img/ss-1.jpg";
+import { IoIosArrowForward } from "react-icons/io";
 
 const Chapter = () => {
   const { chapterName } = useParams();
@@ -235,7 +236,7 @@ const Chapter = () => {
                 <p>View More</p>
                 <Link to="/photo-gallery/">
                   <div className="round-arrow">
-                    <span>&rarr;</span>
+                    <IoIosArrowForward color="white" size={20} />
                   </div>
                 </Link>
               </div>
@@ -247,7 +248,7 @@ const Chapter = () => {
                     <p>View More</p>
                     <Link to="/photo-gallery/">
                       <div className="round-arrow">
-                        <span>&rarr;</span>
+                        <IoIosArrowForward color="white" size={20} />
                       </div>
                     </Link>
                   </div>
@@ -264,7 +265,7 @@ const Chapter = () => {
                     <p>View More</p>
                     <Link to="/photo-gallery/">
                       <div className="round-arrow">
-                        <span>&rarr;</span>
+                        <IoIosArrowForward color="white" size={20} />
                       </div>
                     </Link>
                   </div>
@@ -281,7 +282,7 @@ const Chapter = () => {
                     <p>View More</p>
                     <Link to="/photo-gallery/">
                       <div className="round-arrow">
-                        <span>&rarr;</span>
+                        <IoIosArrowForward color="white" size={20} />
                       </div>
                     </Link>
                   </div>
@@ -300,7 +301,7 @@ const Chapter = () => {
                     <p>View More</p>
                     <Link to="/photo-gallery/">
                       <div className="round-arrow">
-                        <span>&rarr;</span>
+                        <IoIosArrowForward color="white" size={20} />
                       </div>
                     </Link>
                   </div>
@@ -316,9 +317,9 @@ const Chapter = () => {
                 <div className="set-2-photo">
                   <div className="photo-write-up">
                     <p>View More</p>
-                    <Link to="/photo-gallery/">
-                      <div className="round-arrow">
-                        <span>&rarr;</span>
+                    <Link to="/photo-gallery/" className="round-arrow">
+                      <div>
+                        <IoIosArrowForward color="white" size={20} />
                       </div>
                     </Link>
                   </div>
@@ -344,7 +345,9 @@ const Chapter = () => {
           <h1>Ready to Become A Member?</h1>
         </div>
         <div className="join-btn">
-          <Btn content={"Join the Community"} />
+          <Link to={"/auth/register"}>
+            <Btn content={"Join the Community"} />
+          </Link>
         </div>
       </div>
       {projectGallery.length > 0 ? (
@@ -362,7 +365,7 @@ const Chapter = () => {
                 <p>View More</p>
                 <Link to="/project-gallery/">
                   <div className="round-arrow">
-                    <span>&rarr;</span>
+                    <IoIosArrowForward color="white" size={20} />
                   </div>
                 </Link>
               </div>
@@ -381,7 +384,7 @@ const Chapter = () => {
                       ].replaceAll(" ", "-")}/`}
                     >
                       <div className="round-arrow">
-                        <span>&rarr;</span>
+                        <IoIosArrowForward color="white" size={20} />
                       </div>
                     </Link>
                   </div>
@@ -403,7 +406,7 @@ const Chapter = () => {
                       ].replaceAll(" ", "-")}/`}
                     >
                       <div className="round-arrow">
-                        <span>&rarr;</span>
+                        <IoIosArrowForward color="white" size={20} />
                       </div>
                     </Link>
                   </div>
@@ -425,7 +428,7 @@ const Chapter = () => {
                       ].replaceAll(" ", "-")}/`}
                     >
                       <div className="round-arrow">
-                        <span>&rarr;</span>
+                        <IoIosArrowForward color="white" size={20} />
                       </div>
                     </Link>
                   </div>
@@ -449,7 +452,7 @@ const Chapter = () => {
                       ].replaceAll(" ", "-")}/`}
                     >
                       <div className="round-arrow">
-                        <span>&rarr;</span>
+                        <IoIosArrowForward color="white" size={20} />
                       </div>
                     </Link>
                   </div>
@@ -471,7 +474,7 @@ const Chapter = () => {
                       ].replaceAll(" ", "-")}/`}
                     >
                       <div className="round-arrow">
-                        <span>&rarr;</span>
+                        <IoIosArrowForward color="white" size={20} />
                       </div>
                     </Link>
                   </div>
